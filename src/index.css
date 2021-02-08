@@ -42,3 +42,16 @@ h1 {
   color: rgb(243, 243, 243);
   background-color: rgb(16, 198, 214);
 }
+
+/* FOOTER */
+footer {
+  margin: 20px auto;
+  max-width: 700px;
+  text-align: center;
+  border-top: 2px solid rgb(238, 238, 238);
+}
+
+footer p {
+  padding: 10px;
+  font-size: 20px;
+}

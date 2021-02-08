@@ -8,6 +8,8 @@
 }
 
 body {
+  margin: 0 auto;
+  max-width: 700px;
   color: #333;
   background-color: #F1F5F8;
 }
@@ -20,8 +22,6 @@ body {
 .navbar {
   align-items: center;
   justify-content: space-between;
-  margin: 0 auto;
-  max-width: 700px;
   border-bottom: 2px solid rgb(223, 223, 223);
 }
 
@@ -48,11 +48,6 @@ h1 {
 }
 
 /* HEADER */
-header {
-  margin: 0 auto;
-  max-width: 700px;
-}
-
 .header__bg {
   position: relative;
   margin-top: 10px;
@@ -81,10 +76,13 @@ header {
   font-size: 19px;
 }
 
+/* BLOGS LIST */
+.blogs__list {
+  margin: 15px 0;
+}
+
 /* FOOTER */
 footer {
-  margin: 20px auto;
-  max-width: 700px;
   text-align: center;
   border-top: 2px solid rgb(223, 223, 223);
 }

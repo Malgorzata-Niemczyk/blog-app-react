@@ -3,6 +3,42 @@
 /* base styles */
 * {
   box-sizing: border-box;
-  margin: 0 auto;
+  margin: 0;
+  color: #333;
   font-family: 'Caveat', cursive;
+}
+
+/* NAVIGATION */
+.navbar, .navbar__links {
+  display: flex;
+}
+
+.navbar {
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 700px;
+  border-bottom: 2px solid rgb(238, 238, 238);
+}
+
+h1 {
+  color: rgb(16, 198, 214);
+  margin-top: 10px;
+}
+
+.navbar__links a {
+  margin: 15px;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.navbar__links__new__blog {
+  transition: 0.3s;
+}
+
+.navbar__links__new__blog:hover {
+  padding: 3px 8px;
+  border-radius: 8px;
+  color: rgb(243, 243, 243);
+  background-color: rgb(16, 198, 214);
 }

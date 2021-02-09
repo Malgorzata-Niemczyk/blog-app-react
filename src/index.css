@@ -96,9 +96,15 @@ footer p {
 .blog__preview {
   display: flex;
   margin: 20px 0;
-  box-shadow: 0 0 8px grey;
+  box-shadow: 0 0 5px grey;
   border-radius: 10px;
   cursor: pointer;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.blog__preview:hover {
+  box-shadow: 0 0 10px grey;
+  transform: scale(1.05);
 }
 
 .blog__preview img {

@@ -91,3 +91,40 @@ footer p {
   padding: 10px;
   font-size: 20px;
 }
+
+/* BLOG PREVIEW - LISTS */
+.blog__preview {
+  display: flex;
+  margin: 20px 0;
+  box-shadow: 0 0 8px grey;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.blog__preview img {
+  max-width: 250px;
+  max-height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.blog__preview__text {
+  padding: 20px;
+  background-color: rgb(253, 253, 253);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.blog__preview__text h2 {
+  color: rgb(16, 198, 214);
+}
+
+.blog__preview__text__body {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.blog__author {
+  font-weight: 700;
+}

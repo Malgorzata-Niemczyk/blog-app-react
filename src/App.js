@@ -1,6 +1,7 @@
 import BlogsList from "./components/BlogsList";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Home from "./components/Home";
 import Navigation from "./components/Navigation";
 
 
@@ -10,6 +11,9 @@ function App() {
       <Navigation />
       <Header />
       <BlogsList />
+      <div className="content">
+        <Home />
+      </div>
       <Footer />
     </div>
   );

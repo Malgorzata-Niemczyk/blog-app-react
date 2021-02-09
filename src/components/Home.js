@@ -42,7 +42,7 @@ const Home = () => {
 
     return (
         <div className="home">
-            <BlogsList />
+            <BlogsList blogs={blogs} title="All Our Blogs!" />
         </div>
     );
 }

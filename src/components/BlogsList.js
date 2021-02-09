@@ -1,7 +1,8 @@
-const BlogsList = () => {
+const BlogsList = ({blogs, title}) => {
+    
     return ( 
         <div className="blogs__list">
-            <h2>All Our Blogs!</h2>
+            <h2>{ title }</h2>
             {blogs.map(blog => (
                 <div className="blog__preview" key={blog.id}>
                     <img src={ blog.image } />

@@ -117,6 +117,8 @@ footer p {
 }
 
 .blog__preview__text {
+  display: flex;
+  flex-direction: column;
   padding: 20px;
   background-color: rgb(253, 253, 253);
   border-top-right-radius: 10px;
@@ -134,4 +136,19 @@ footer p {
 
 .blog__author {
   font-weight: 700;
+}
+
+/* DELETE BLOG BUTTON */
+.btn__wrapper {
+  margin-top: 15px;
+  align-self: flex-end;
+}
+
+.btn__delete {
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  color: rgb(243, 243, 243);
+  background-color: rgb(16, 198, 214);
+  cursor: pointer;
 }

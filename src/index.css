@@ -150,5 +150,6 @@ footer p {
   border-radius: 5px;
   color: rgb(243, 243, 243);
   background-color: rgb(16, 198, 214);
+  border: none;
   cursor: pointer;
 }

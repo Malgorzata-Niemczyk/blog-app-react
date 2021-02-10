@@ -152,4 +152,9 @@ footer p {
   background-color: rgb(16, 198, 214);
   border: none;
   cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn__delete:hover {
+  background-color: rgb(89, 90, 90);
 }

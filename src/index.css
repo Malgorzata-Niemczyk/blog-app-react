@@ -37,11 +37,11 @@ h1 {
   color: #333;
 }
 
-.navbar__links__new__blog {
+.navbar__links a {
   transition: 0.3s;
 }
 
-.navbar__links__new__blog:hover {
+.navbar__links a:hover {
   padding: 3px 8px;
   border-radius: 8px;
   color: rgb(243, 243, 243);

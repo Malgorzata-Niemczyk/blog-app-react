@@ -8,7 +8,7 @@ const BlogsList = ({ blogs, title, handleDelete }) => {
                     <img src={ blog.image } />
                     <div className="blog__preview__text">
                         <h2>{ blog.title }</h2>
-                        <p className="blog__preview__text__body">{ blog.body }</p>
+                        <p className="blog__preview__text__body">{ blog.body.slice(0, 79) }...</p>
                         <p>Written by <span className="blog__author">{ blog.author }</span></p>
                         <div className="btn__wrapper">
                             <button className="btn__delete" onClick={() => {

@@ -4,11 +4,6 @@ import BlogsList from "./BlogsList";
 const Home = () => {
     const [blogs, setBlogs] = useState(null)
 
-    const handleDelete = (id) => {
-        const newBlogs = blogs.filter(blog => blog.id !== id);
-        setBlogs(newBlogs);
-    };
-
     useEffect(() => {
         fetch('http://localhost:8000/blogs')
             .then(res => res.json())
@@ -17,7 +12,7 @@ const Home = () => {
 
     return (
         <div className="home">
-            {blogs && <BlogsList blogs={blogs} title="All Our Blogs!" handleDelete={handleDelete} />}
+            {blogs && <BlogsList blogs={blogs} title="All Our Blogs!" />}
         </div>
     );
 }

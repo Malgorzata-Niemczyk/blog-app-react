@@ -1,20 +1,21 @@
 // creating a custom hook (each custom hook needs to start with a word 'use', e.g useFetch to make it work)
+import { useState, useEffect } from 'react';
 
-const  useFetch = () => {
-    const [blogs, setBlogs] = useState(null);
+const useFetch = (url) => {
+    const [data, setData] = useState(null);
     const [isPending, setIsPending] = useState(true);
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch('http://localhost:8000/blogs')
+        fetch(url)
             .then(res => {
                 if (res.status !== 200) {
                     throw Error('Sorry, could not fetch the data for that resource :(')
                 }
-                return res.json()
+                return res.json();
             })
             .then(data => {
-                setBlogs(data);
+                setData(data);
                 setIsPending(false);
                 setError(null);
             })
@@ -22,5 +23,9 @@ const  useFetch = () => {
                 setError(err.message);
                 setIsPending(false);
             })
-    }, []);
-}
+    }, [url]);
+
+    return { data, isPending, error }
+};
+ 
+export default useFetch;

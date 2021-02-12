@@ -1,9 +1,13 @@
 # React Blog App
 
-This is a personal project I am working on while learning React with the Net Ninja tutorial. It is a blog within the topic of pets' health.
+This is a personal project I am working on while learning React. It is a simple blog within the topic of pets' health in which a user can add a new blog and delete an existing one.
+
+Blog main page:
+
+![](./src/assets/screenshots/blog_main-page.PNG)
 
 The blog is created with:
-- React (hooks, react router)
+- React (hooks, react router, react-icons)
 - JavaScript
 - JSON Server
 

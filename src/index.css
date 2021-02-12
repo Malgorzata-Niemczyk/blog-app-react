@@ -181,6 +181,10 @@ footer p {
     flex-direction: column;
   }
 
+  .blogs__list__heading {
+    margin-left: 17px;
+  }
+
   .blog__preview img {
     min-width: 100%;
     min-height: 100%;

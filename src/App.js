@@ -2,18 +2,24 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Navigation from "./components/Navigation";
-
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <Navigation />
-      <Header />
+    <Router>
+      <div className="App">
+        <Navigation />
+        <Header />
       <div className="content">
-        <Home />
+        <Switch>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
       </div>
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

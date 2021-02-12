@@ -2,7 +2,7 @@ const BlogsList = ({ blogs, title }) => {
     
     return ( 
         <div className="blogs__list">
-            <h2>{ title }</h2>
+            <h2 className="blogs__list__heading">{ title }</h2>
             {blogs.map(blog => (
                 <div className="blog__preview" key={blog.id}>
                     <img src={ blog.image } />

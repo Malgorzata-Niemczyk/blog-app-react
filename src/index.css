@@ -134,8 +134,15 @@ footer p {
   margin-bottom: 10px;
 }
 
-.blog__author {
+.blog__author, .blog__date {
   font-weight: 700;
+}
+
+.blog__date {
+  font-size: 19px;
+  margin-bottom: 6px;
+  padding-top: 5px;
+  border-top: 1px solid rgb(223, 223, 223);
 }
 
 /* DELETE BLOG BUTTON */

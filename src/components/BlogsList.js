@@ -9,6 +9,7 @@ const BlogsList = ({ blogs, title }) => {
                     <div className="blog__preview__text">
                         <h2>{ blog.title }</h2>
                         <p className="blog__preview__text__body">{ blog.body.slice(0, 79) }...</p>
+                        <p className="blog__date">{ blog.date }</p>
                         <p>Written by <span className="blog__author">{ blog.author }</span></p>
                     </div>   
                 </div>

@@ -191,6 +191,52 @@ footer p {
   font-size: 20px;
 }
 
+/*FORM FOR CREATING A NEW BLOG*/
+.create__blog {
+  min-height: 100vh;
+  padding: 0 10px;
+}
+
+.create__blog h2 {
+  margin: 35px 0;
+  text-align: center;
+  color: rgb(16, 198, 214);
+}
+
+.create__blog form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  border: 1px solid rgb(223, 223, 223);
+  border-radius: 10px;
+  box-shadow: 0 0 5px grey;
+  background-color: rgb(253, 253, 253);
+}
+
+.create__blog form label {
+  margin-bottom: 10px;
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.create__blog form input, .create__blog form select {
+  padding: 5px;
+}
+
+.create__blog button {
+  align-self: center;
+  margin-top: 15px;
+  padding: 5px 20px;
+  font-size: 20px;
+  color: rgb(243, 243, 243);
+  border-radius: 10px;
+  background-color: rgb(16, 198, 214);
+  cursor: pointer;
+}
+
 /*MEDIA QUERIES BREAKPOINTS*/
 @media screen and (max-width: 662px) {
   .navbar h1 {

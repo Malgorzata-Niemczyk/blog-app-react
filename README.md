@@ -1,10 +1,15 @@
 # React Blog App
 
-This is a personal project I am working on while learning React. It is a simple blog within the topic of pets' health in which a user can add a new blog and delete an existing one.
+This is a personal project I am working on while learning React. It is a simple blog within the topic of pets' health in which a user can switch to blog details upon clicking a blog preview, delete an existing blog and add a new blog.
 
 Blog main page:
 
 ![](./src/assets/screenshots/blog_main-page.PNG)
+
+
+Form for creating a new blog:
+
+![](./src/assets/screenshots/create-blog-form.PNG)
 
 The blog is created with:
 - React (hooks, react router, react-icons)

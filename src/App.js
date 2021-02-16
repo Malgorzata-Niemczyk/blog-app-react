@@ -11,10 +11,10 @@ function App() {
     <Router>
       <div className="App">
         <Navigation />
-        <Header />
       <div className="content">
         <Switch>
           <Route exact path="/">
+            <Header />
             <Home />
           </Route>
           <Route path="/create-blog">

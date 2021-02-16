@@ -129,6 +129,11 @@ footer p {
   color: rgb(16, 198, 214);
 }
 
+.blog__preview__text a {
+  text-decoration: none;
+  color: #333;
+}
+
 .blog__preview__text__body {
   font-size: 20px;
   margin-bottom: 10px;

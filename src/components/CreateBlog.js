@@ -6,10 +6,30 @@ const CreateBlog = () => {
     const [date, setDate] = useState('');
     const [author, setAuthor] = useState('Jane Doe');
 
+    const handleSubmit = (event) => {
+        event.preventDefault();
+
+        // create a blog object to output later the data in the db.json file upon submitting
+        let newBlog = {
+            title,
+            body,
+            date,
+            author
+        };
+
+        // console.log(newBlog);
+
+        // clearing the input fields after submitting the data
+        setTitle('');
+        setBody('');
+        setDate('');
+        setAuthor('Jane Doe');
+    }
+
     return ( 
         <div className="create__blog">
             <h2>Add a New Blog</h2>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <label>Blog title:</label>
                 <input 
                     type="text"

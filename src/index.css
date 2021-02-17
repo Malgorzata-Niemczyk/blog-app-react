@@ -207,7 +207,7 @@ footer p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 400px;
+  max-width: 425px;
   margin: 0 auto;
   padding: 30px 20px;
   border: 1px solid rgb(223, 223, 223);

@@ -7,7 +7,7 @@ const BlogsList = ({ blogs, title }) => {
             <h2 className="blogs__list__heading">{ title }</h2>
             {blogs.map(blog => (
                 <div className="blog__preview" key={blog.id}>
-                    <img src={ blog.image } />
+                    <img src={ blog.image } alt="blog post image" />
                     <div className="blog__preview__text">
                         <Link to={`/blog-details/${blog.id}`}>
                             <h2>{ blog.title }</h2>

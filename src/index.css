@@ -227,7 +227,7 @@ footer p {
   font-size: 18px;
 }
 
-.create__blog button {
+.create__blog button, .blog__details__delete__btn button {
   align-self: center;
   margin-top: 15px;
   padding: 5px 20px;
@@ -237,6 +237,12 @@ footer p {
   border-radius: 10px;
   background-color: rgb(16, 198, 214);
   cursor: pointer;
+}
+
+.blog__details__delete__btn {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
 }
 
 /*MEDIA QUERIES BREAKPOINTS*/

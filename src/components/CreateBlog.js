@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 
 const CreateBlog = () => {
     const [title, setTitle] = useState('');
@@ -7,6 +8,7 @@ const CreateBlog = () => {
     const [author, setAuthor] = useState('Jane Doe');
     const [image, setImage] = useState('');
     const [isPending, setIsPending] = useState(false);
+    const pageRedicrection = useHistory(); // storing the useHistory hook in a variable to invoke it
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -29,7 +31,9 @@ const CreateBlog = () => {
             body: JSON.stringify(newBlog)
         }).then(() => {
             console.log('New blog added');
-            setIsPending(false)
+            setIsPending(false);
+            // using the push() method to redirect to the home page
+            pageRedicrection.push('/');
         })
 
         // clearing the input fields after submitting the data

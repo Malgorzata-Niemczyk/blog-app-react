@@ -5,6 +5,7 @@ const CreateBlog = () => {
     const [body, setBody] = useState('');
     const [date, setDate] = useState('');
     const [author, setAuthor] = useState('Jane Doe');
+    const [image, setImage] = useState('');
     const [isPending, setIsPending] = useState(false);
 
     const handleSubmit = (event) => {
@@ -15,7 +16,8 @@ const CreateBlog = () => {
             title,
             body,
             date,
-            author
+            author,
+            image
         };
 
         // console.log(newBlog);
@@ -70,6 +72,12 @@ const CreateBlog = () => {
                     <option value="John White">John White</option>
                     <option value="Lauren Smith">Lauren Smith</option>
                 </select>
+                <label>Image URL:</label>
+                <input 
+                    type="text"
+                    value={image}
+                    onChange={event => setImage(event.target.value)}
+                    required />
                 {!isPending && <button type="submit">Add Blog</button>}
                 {isPending && <button type="submit" disabled>Adding Blog...</button>}
             </form>

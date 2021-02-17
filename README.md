@@ -1,6 +1,6 @@
 # React Blog App
 
-This is a personal project I am working on while learning React. It is a simple blog within the topic of pets' health in which a user can switch to blog details upon clicking a blog preview, delete an existing blog and add a new blog.
+This is a personal project I did while learning React. It is a blog within the topic of pets' health in which a user can switch to blog details upon clicking a blog preview, delete an existing blog and add a new blog.
 
 Blog main page:
 

@@ -22,6 +22,8 @@ Clone this repo and run ``` $ npm install ``` to install all dependecies.
 
 ## Usage 
 
+Run ```$ npx json-server --watch data/db.json --port 8000 ``` to watch the file with data for changes.
+
 Once the dependencies are installed, you can run ```$ npm start ```  to start the application.
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
